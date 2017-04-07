@@ -5,14 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <!-- Boostrap se puede referenciar a una URL, o a la versión descargada en nuestro servidor. -->
+    
+    
+    
     <style type="text/css">
-
+      #popPar {
+        width: 80px;
+      }
+      #popTool {
+        width: 100px;
+      }
     </style>
+    
   </head>
   <body>
+    <p></p>  
     <p></p>
     <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong" data-name="Damian">
@@ -27,6 +39,7 @@
   Email Arnold
 </button>
 
+        
 <!-- Modal -->
 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
   <div class="modal-dialog" role="document">
@@ -38,7 +51,7 @@
         </button>
       </div>
       <div class="modal-body">
-        ...
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eu ligula libero. Nunc ullamcorper dui dui, ac luctus justo auctor nec. Praesent ut libero et quam dictum hendrerit. Curabitur tempor massa malesuada quam sodales, imperdiet porta nibh finibus. Morbi lacinia nibh a pulvinar luctus.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -47,6 +60,20 @@
     </div>
   </div>
 </div>
+    
+    <p></p>
+    <div class="container">
+    <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-placement="bottom" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
+    
+      <p></p>
+      <p id="popPar" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click me!</p>
+    <p></p>
+      <h1>Try tootlips:</h1>
+      
+      <p id="popTool" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+        Tooltip on top</p>
+</button>
+    </div>
     
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
@@ -69,6 +96,18 @@
       //$('#exampleModalLong').on('hide.bs.modal', function (event) {
       $('#exampleModalLong').on('hidden.bs.modal', function (event) {
         alert("Modal cosed!");
+      })
+      
+      $(function () {
+        $('[data-toggle="popover"]').popover()
+      })
+      
+      $(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+      
+      $('#popTool').on('shown.bs.tooltip', function (event) {
+        alert("HI!");
       })
     </script>
     
