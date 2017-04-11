@@ -2,7 +2,7 @@
 <!-- Always include the HTML5 doctype at the beginning of the page, along with the lang attribute and the correct character set. -->
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Bootstrap Example - Damian Demasi</title>
   <meta charset="utf-8">
   <!-- Bootstrap 3 is designed to be responsive to mobile devices. The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). The initial-scale=1 part sets the initial zoom level when the page is first loaded by the browser. -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,15 +16,23 @@
     .container {
       border: solid red 1px;
     }
+    .container-fluid {
+      border: solid blue 1px;
+    }
   </style>
 </head>
 <body>
-
+  
 <div class="container">
   <h1>Hello responsive world!</h1>
   <p>For further information please check source code.</p>
   <p>The container is highlighted in red.</p>
+  <p>Reference: <a href="https://www.w3schools.com/bootstrap/bootstrap_get_started.asp">www.w3schools.com</a></p>
 </div>
 
+  <div class="container-fluid">
+  <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport</p> 
+</div>
+  
 </body>
 </html>
