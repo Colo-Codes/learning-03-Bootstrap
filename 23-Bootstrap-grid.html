@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		.columns {
+			background-color: lightgreen;
+			border: 1px solid green;
+			text-align: center;
+		}
+		.columnsOrange {
+			background-color: orange;
+			border: 1px solid red;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 columns">6 columns (a): col-lg-6</div>
+			<div class="col-lg-6 columns">6 columns (b): col-lg-6</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 columns">2 columns (a): col-lg-2</div>
+			<div class="col-lg-8 columns">
+				<div class="row">
+					<div class="col-lg-6 columnsOrange">Nested - col-lg-6</div>
+					<div class="col-lg-6 columnsOrange">
+						<div class="col-lg-4 columnsOrange">Sub-Nested - col-lg-4</div>
+						<div class="col-lg-4 columnsOrange">Sub-Nested - col-lg-4</div>
+						<div class="col-lg-4 columnsOrange">Sub-Nested - col-lg-4</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-2 columns">2 columns (c): col-lg-2</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 columns">4 columns (a): col-lg-4</div>
+			<div class="col-lg-4 columns">4 columns (b): col-lg-4</div>
+			<div class="col-lg-4 columns">4 columns (c): col-lg-4</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-3 columns">3 columns (a): col-lg-3</div>
+			<div class="col-lg-3 columns">3 columns (b): col-lg-3</div>
+			<div class="col-lg-3 columns">3 columns (c): col-lg-3</div>
+			<div class="col-lg-3 columns">3 columns (d): col-lg-3</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (1): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (2): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (3): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (4): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (5): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (6): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (7): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (8): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (9): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (10): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (11): col-lg-1</div>
+			<div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 columns">Grid options - 1 column (12): col-lg-1</div>
+		</div>
+	</div>
+
+</body>
+</html>
